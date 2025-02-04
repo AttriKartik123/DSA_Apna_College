@@ -7,3 +7,4 @@ int a=10;
 cout<< "Address Of A="<< &a;
 
     return 0 ;
+}
