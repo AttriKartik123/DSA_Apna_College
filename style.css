@@ -163,12 +163,102 @@ tbody tr:nth-child(odd) {
     background-color: rgba(224, 255, 255, 0.5);
 }
 
-@media screen and (max-width: 700px) {
-    .container {
-        min-width: none;
+
+
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+td img.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+td p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
     }
 
-    .container-body {
-        overflow-x: scroll;
+    th, td {
+        padding: 8px;
+    }
+
+    td img.avatar {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    th, td {
+        display: block;
+        width: 100%;
+    }
+
+    td p {
+        font-size: 12px;
+    }
+
+    td img.avatar {
+        width: 25px;
+        height: 25px;
+    }
+
+    /* Hide some columns on mobile */
+    td:nth-child(4), td:nth-child(5) {
+        display: none;
     }
 }
