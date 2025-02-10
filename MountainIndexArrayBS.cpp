@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-
+//code for peak index element
 
 
     int PeakIndexMountainArray(vector<int>& A){
