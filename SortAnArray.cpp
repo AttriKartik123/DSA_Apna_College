@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-using namespace std;
+using namespace std;  //Dutch NAtional Flag Algorithm 
 
 class Solution{
     public:
